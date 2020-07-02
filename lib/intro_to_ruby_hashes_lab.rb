@@ -3,14 +3,14 @@ def my_hash_creator(key, value)
 end
 
 def read_from_hash(hash, key)
-  hash[:key]
+  hash[key]
 end
 
 def update_counting_hash(hash, key)
-  if hash[:key] do
-    hash[:key] = hash[:key] += 1
+  if hash[key] do
+    hash[key] = hash[key] += 1
   end
   else 
-    hash[:key] = 1
+    hash[key] = 1
   end
  end
